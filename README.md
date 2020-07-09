@@ -65,5 +65,5 @@ Things you may want to cover:
 |user_id|integer|null: false|
 
 ### Association
-- 
-- 
+- has_many :user
+- has_many :message
