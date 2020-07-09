@@ -34,7 +34,7 @@ Things you may want to cover:
 - belongs_to :group
 - belongs_to :user
 
-## usersテーブル
+## userテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -52,6 +52,17 @@ Things you may want to cover:
 |------|----|-------|
 |message|text||
 |image|?||
+
+### Association
+- 
+- 
+
+## groupテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|group_name|integer|null: false|
+|user_id|integer|null: false|
 
 ### Association
 - 
