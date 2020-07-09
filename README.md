@@ -33,3 +33,15 @@ Things you may want to cover:
 ### Association
 - belongs_to :group
 - belongs_to :user
+
+## usersテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false: true|
+|address|string|null: false: true|
+|password|string|null: false: true|
+
+### Association
+- belongs_to :group
+- belongs_to :user
