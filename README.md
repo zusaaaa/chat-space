@@ -54,8 +54,8 @@ Things you may want to cover:
 |image|?||
 
 ### Association
-- 
-- 
+- belongs_to :group
+- belongs_to :user
 
 ## groupテーブル
 
