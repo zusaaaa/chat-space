@@ -43,5 +43,16 @@ Things you may want to cover:
 |password|string|null: false: true|
 
 ### Association
-- belongs_to :group
-- belongs_to :user
+- 
+- 
+
+## messageテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|message|text||
+|image|?||
+
+### Association
+- 
+- 
