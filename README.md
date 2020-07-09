@@ -51,7 +51,7 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |message|text||
-|image|?||
+|image|text||
 
 ### Association
 - belongs_to :group
