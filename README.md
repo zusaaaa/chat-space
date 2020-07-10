@@ -67,5 +67,5 @@ Things you may want to cover:
 |user_id|integer|null: false|
 
 ### Association
-- has_many :group_user
-- has_many :message
+- has_many :users, through: :users_id
+- has_many :messages
