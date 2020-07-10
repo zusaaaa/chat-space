@@ -43,8 +43,8 @@ Things you may want to cover:
 |password|string|null: false: true|
 
 ### Association
-- has_many :group_user
-- has_many :message
+- has_many :groups, through: :groups_id
+- has_many :messages
 
 ## messageテーブル
 
