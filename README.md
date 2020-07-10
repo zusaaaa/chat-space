@@ -63,7 +63,7 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|group_name|integer|null: false|
+|name|integer|null: false|
 |user_id|integer|null: false|
 
 ### Association
