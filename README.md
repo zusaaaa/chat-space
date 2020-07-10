@@ -41,9 +41,10 @@ Things you may want to cover:
 |name|string|null: false: true|
 |address|string|null: false: true|
 |password|string|null: false: true|
+|group_id|integer|null: false|
 
 ### Association
-- has_many :group
+- has_many :group_user
 - has_many :message
 
 ## messageテーブル
@@ -65,5 +66,5 @@ Things you may want to cover:
 |user_id|integer|null: false|
 
 ### Association
-- has_many :user
+- has_many :group_user
 - has_many :message
