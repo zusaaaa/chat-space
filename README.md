@@ -41,7 +41,6 @@ Things you may want to cover:
 |name|string|null: false: true|
 |address|string|null: false: true|
 |password|string|null: false: true|
-|group_id|integer|null: false|
 
 ### Association
 - has_many :group_user
