@@ -70,6 +70,10 @@
           .group-info__member{
             color: #999999;
             font-size: 12px;
+            display: flex;
+            .users{
+              padding-left: 10px;
+            }
           }
         }
       }
@@ -89,26 +93,35 @@
       height: calc(100vh - calc(100px + 90px));
       display: flex;
       flex-direction: column;
-      .message-list{
+      .message-box{
         display: flex;
-        align-items: center;
-        margin:35px 0 12px 40px;
-        .message-list__name{
-          color: #333333;
-          font-size: 16px;
-        }
-        .message-list__date{
-          color: #999999;
-          font-size: 12px;
-          margin: 10px;
+        flex-direction: column;
+        .message-list{
+          display: flex;
+          align-items: center;
+          margin:35px 0 12px 40px;
+          .message-list__name{
+            color: #333333;
+            font-size: 16px;
+          }
+          .message-list__date{
+            color: #999999;
+            font-size: 12px;
+            margin: 10px;
+          }
         }
       }
       .main__content{
+        display: flex;
+        flex-direction: column;
+        p{
         color: #434A54;
         font-size: 14px;
         margin:0 0 46px 40px;
+        }
       }
     }
+    
     .footer{
       background-color: #d2d2d2;
       width: calc(100vw - 300px);
