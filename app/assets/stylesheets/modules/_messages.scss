@@ -89,17 +89,19 @@
     }
     .main{
       background-color: #fafafa;
+      padding: 35px 40px 0;
       width: calc(100vw - 300px);
       height: calc(100vh - calc(100px + 90px));
       display: flex;
       flex-direction: column;
+      overflow: scroll;
       .message-box{
         display: flex;
         flex-direction: column;
+        margin-bottom: 46px;
         .message-list{
           display: flex;
           align-items: center;
-          margin:35px 0 12px 40px;
           .message-list__name{
             color: #333333;
             font-size: 16px;
@@ -107,17 +109,17 @@
           .message-list__date{
             color: #999999;
             font-size: 12px;
-            margin: 10px;
+            padding-left: 10px;
           }
         }
       }
       .main__content{
         display: flex;
         flex-direction: column;
+        margin-top: 12px;
         p{
         color: #434A54;
         font-size: 14px;
-        margin:0 0 46px 40px;
         }
       }
     }
