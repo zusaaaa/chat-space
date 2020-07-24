@@ -54,11 +54,11 @@
   }
   
   .chat-main{
+    width: calc(100vw - 300px);
     .header {
       display: flex;
       justify-content: space-between;
       background-color: #ffffff;
-      width: calc(100vw - 300px);
       height: 100px;
       .group-info{
         .group-info__name{
@@ -90,8 +90,7 @@
     .main{
       background-color: #fafafa;
       padding: 35px 40px 0;
-      width: calc(100vw - 300px);
-      height: calc(100vh - calc(100px + 90px));
+      height: calc(100vh - 100px - 90px);
       display: flex;
       flex-direction: column;
       overflow: scroll;
@@ -125,10 +124,9 @@
     }
     
     .footer{
-      background-color: #d2d2d2;
+      background-color: #dddddd;
       width: calc(100vw - 300px);
       height: 90px;
-      box-sizing: border-box;
       padding: 20px 50px 20px 40px;
       .footer_box{
         width: 100%;
@@ -141,29 +139,35 @@
             position: relative;
             width: 100%;
             .input-box__text{
-              padding-left: 10px;
+              border: none;
+              padding: 0 45px 0 15px;
               height: 50px;
               width: 100vh
             }
             .input-box__image{
               position: absolute;
+              background-color: #fff;
               height: 50px;
               right: 10px;
+              .input-box__icon{
+                line-height: 50px;
+                font-size: 25px;
+              }
             }
-            .input-box__image-select{
+            .Hidden{
               display: none;
             }
           }
+          .form__send{
+            background-color: #38aef0;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            height: 50px;
+            margin-left: 15px;
+            padding: 0 30px;
+          }
         }
-       }
-      .form__send{
-        background-color: #38aef0;
-        color: #fff;
-        height: 50px;
-        font-size: 16px;
-        padding: 0 30px;
-        margin: 0 40px 0 15px;
-        box-sizing: border-box;
       }
     }
   }

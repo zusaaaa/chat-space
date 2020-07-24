@@ -23,6 +23,6 @@
         .input-box
           = f.text_field :content, class: "input-box__text", placeholder: "type a message"
           = f.label :image, class: "input-box__image" do
-            = icon('fas', 'image', class: 'input-box__icon')
-            = f.file_field :image, class:"input-box__image-select"
+            = icon('far', 'image', class: 'input-box__icon')
+            = f.file_field :image, class:"Hidden"
         = f.submit 'Send', class: 'form__send'
