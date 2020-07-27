@@ -53,6 +53,7 @@ $(function(){
       data: {id: last_message_id}
     })
     .done(function(messages) {
+      console.log(messages);
       // 更新するメッセージがなかった場合は.doneの後の処理が動かないようにする
       if (messages.length !== 0) {
         //追加するHTMLの入れ物を作る
@@ -62,8 +63,8 @@ $(function(){
           insertHTML += buildHTML(message)
         });
         //メッセージが入ったHTMLに、入れ物ごと追加
-        $('.MessageField').append(insertHTML);
-        $('.MessageField').animate({ scrollTop: $('.MessageField')[0].scrollHeight});
+        $('.main').append(insertHTML);
+        $('.main').animate({ scrollTop: $('.main')[0].scrollHeight});
       }
     })
     .fail(function() {
